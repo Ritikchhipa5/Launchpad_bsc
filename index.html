@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    gridTemplateColumns: {
+                        'IDO-grid-3': 'repeat(auto-fill,minmax(300px,1fr))',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<style>
+    * {
+        font-family: 'Inter', sans-serif;
+    }
+</style>
+
+<body>
+    <!-- //Header  -->
+    <div class="px-[40px] py-[20px] flex justify-between items-center shadow-sm">
+        <div>
+            <img src="https://blueworld.co/static/media/default_avatar.937d20b0.png" class="rounded" width="32px">
+        </div>
+        <div class="flex text-[#060b27]">
+            <a class="hover:bg-[#f0f7ff] rounded-lg cursor-pointer transition duration-250 ease-out hover:ease-in">
+                <div class="px-[16px] py-[8px]">Dashboard</div>
+            </a>
+            <a class="hover:bg-[#f0f7ff] rounded-lg cursor-pointer transition duration-250 ease-out hover:ease-in">
+                <div class="px-[16px] py-[8px]">Create</div>
+            </a>
+        </div>
+        <div
+            class="px-[16px] py-[8px] bg-[#060b27] rounded-md text-white cursor-pointer ease-in duration-300  hover:shadow-xl hover:shadow-[#060b27]/20">
+            Connect Wallet</div>
+    </div>
+    <div class="h-screen p-[24px]">
+        <div class="flex justify-between md:px-0 lg:px-[120px] py-[48px] items-center">
+            <div class="text-[32px] font-bold text-[#060b27]">
+                <div>IDO Collection</div>
+            </div>
+            <div class="flex gap-x-[8px]">
+                <div
+                    class="hidden md:flex rounded-md p-[8px] border ease-in duration-300 border-[#e8ecf4] hover:ease-out hover:border-[#060b27]">
+                    <div>()</div><input placeholder="Search..." class=" w-full bg-[transparent]  outline-0">
+                </div>
+                <div
+                    class="flex rounded-md p-[8px] border border-[#e8ecf4]  ease-in duration-300  cursor-pointer hover:ease-out hover:border-[#060b27]">
+                    <div><input placeholder="Sort By" class=" w-full bg-[transparent]  outline-0">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- For mobile and Tablet  -->
+        <div class=" block md:hidden flex rounded-md p-[8px] border border-[#e8ecf4] bg-[#f7f9fd]">
+            <div>()</div><input placeholder="Search..." class=" w-full bg-[transparent]  outline-0">
+        </div>
+
+        <!-- IDO List -->
+        <div class="grid lg:px-[120px] py-[48px] gap-[24px]"
+            style="grid-template-columns:repeat(auto-fill,minmax(300px,1fr));">
+            <div
+                class="relative rounded-lg cursor-pointer ease-in duration-300  hover:shadow-xl hover:-translate-y-6 hover:shadow-[#060b27]/30">
+                <div class="relative rounded-lg bg-[#060b27]">
+                    <div class="relative w-full h-[150px] ">
+                        <img width="100%" class="absolute rounded-tl-lg rounded-tr-lg h-full "
+                            src="https://www.gbea.com.au/static/uploads/images/gbea-social-post-background-1080x1080-wffqitxgtvhl-wfsimnatqjkn.jpg">
+                        <div
+                            class="relative z-10 text-white text-2xl flex flex-col justify-center h-full font-[700] px-[30px]">
+                            <span>BSC Launchpad</span>
+                            <span>120 BNB</span>
+                            <span class="text-sm text-[#8a97b3] font-[300]">May 21 ,2022</span>
+                        </div>
+                    </div>
+                    <div class="text-white px-5 py-3">
+                        <div class="flex justify-between mb-5">
+                            <span>Presale Rate</span>
+                            <span>12 BNB</span>
+                        </div>
+                        <div class="flex justify-between mb-5">
+                            <span>Hard Cap</span>
+                            <span>12 BNB</span>
+                        </div>
+                        <div class="flex justify-between mb-5">
+                            <span>Soft Cap </span>
+                            <span>1 BNB</span>
+                        </div>
+                        <div class="flex justify-between mb-5">
+                            <span>Rasied Amount</span>
+                            <span>12 BNB</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div
+                class="relative rounded-lg cursor-pointer ease-in duration-300  hover:shadow-xl hover:-translate-y-6 hover:shadow-[#060b27]/30">
+                <div class="relative rounded-lg bg-[#060b27]">
+                    <div class="relative w-full h-[150px] ">
+                        <img width="100%" class="absolute rounded-tl-lg rounded-tr-lg h-full "
+                            src="https://www.gbea.com.au/static/uploads/images/gbea-social-post-background-1080x1080-wffqitxgtvhl-wfsimnatqjkn.jpg">
+                        <div
+                            class="relative z-10 text-white text-2xl flex flex-col justify-center h-full font-[700] px-[30px]">
+                            <span>BSC Launchpad</span>
+                            <span>120 BNB</span>
+                            <span class="text-sm text-[#8a97b3] font-[300]">May 21 ,2022</span>
+                        </div>
+                    </div>
+                    <div class="text-white px-5 py-3">
+                        <div class="flex justify-between mb-5">
+                            <span>Presale Rate</span>
+                            <span>12 BNB</span>
+                        </div>
+                        <div class="flex justify-between mb-5">
+                            <span>Hard Cap</span>
+                            <span>12 BNB</span>
+                        </div>
+                        <div class="flex justify-between mb-5">
+                            <span>Soft Cap </span>
+                            <span>1 BNB</span>
+                        </div>
+                        <div class="flex justify-between mb-5">
+                            <span>Rasied Amount</span>
+                            <span>12 BNB</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div
+                class="relative rounded-lg cursor-pointer ease-in duration-300  hover:shadow-xl hover:-translate-y-6 hover:shadow-[#060b27]/30">
+                <div class="relative rounded-lg bg-[#060b27]">
+                    <div class="relative w-full h-[150px] ">
+                        <img width="100%" class="absolute rounded-tl-lg rounded-tr-lg h-full "
+                            src="https://www.gbea.com.au/static/uploads/images/gbea-social-post-background-1080x1080-wffqitxgtvhl-wfsimnatqjkn.jpg">
+                        <div
+                            class="relative z-10 text-white text-2xl flex flex-col justify-center h-full font-[700] px-[30px]">
+                            <span>BSC Launchpad</span>
+                            <span>120 BNB</span>
+                            <span class="text-sm text-[#8a97b3] font-[300]">May 21 ,2022</span>
+                        </div>
+                    </div>
+                    <div class="text-white px-5 py-3">
+                        <div class="flex justify-between mb-5">
+                            <span>Presale Rate</span>
+                            <span>12 BNB</span>
+                        </div>
+                        <div class="flex justify-between mb-5">
+                            <span>Hard Cap</span>
+                            <span>12 BNB</span>
+                        </div>
+                        <div class="flex justify-between mb-5">
+                            <span>Soft Cap </span>
+                            <span>1 BNB</span>
+                        </div>
+                        <div class="flex justify-between mb-5">
+                            <span>Rasied Amount</span>
+                            <span>12 BNB</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="w-full text-center text-[#8f9bb7] text-sm py-[48px] border-t border-[#e8ecf4]">
+            <div>© 2022 BSC Launchpad</div>
+        </div>
+    </div>
+</body>
+
+</html>
